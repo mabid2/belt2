@@ -1,0 +1,25 @@
+<h1>Sign In</h1>
+<form action="/session" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+  <label for="email">Email</label>
+  <input type="text" name="email" placeholder="Enter Email">
+
+  <label for="password">Password</label>
+  <input type="password" name="password" Enter="Enter password">
+  <input type="submit" value="Log In">
+</form>
+
+
+<h1>Sign Up</h1>
+
+<form action="/user" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+  <label for="first_name">First Name</label><input type="text" name="user[first_name]" placeholder='Enter First Name'><br>
+  <label for="last_name">Last Name</label><input type="text" name="user[last_name]" placeholder='Enter Last Name'><br>
+  <label for="email">Email</label>
+  <input type="text" name="user[email]" placeholder="Enter Email"><br>
+  <label for="password">Password</label><input type="password" name="user[password]" placeholder="Enter password"><br>
+  <label for="passwordconfirmation">Password Confirmation</label>
+  <input type="password" name="confpass" placeholder="Enter Confirmation Password">
+  <input type="submit" value="Sign Up">
+</form>
